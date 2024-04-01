@@ -16,7 +16,7 @@ async function addPost(post) {
     posts.unshift(post);
     //3
     localStorage.setItem('posts', JSON.stringify(posts));
-    // displayPosts([post], user.name)
+    displayPosts([post], user.name)
     
 } catch {
     console.error(error);
